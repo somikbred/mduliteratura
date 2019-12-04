@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css?family=Caveat:700|Istok+Web:400,700|Playfair+Display:700,900&display=swap');
+
+// font-family: 'Playfair Display', serif;
+// font-family: 'Caveat', cursive;
+// font-family: 'Istok Web', sans-serif;
+
+@import 'normalize';
+@import 'mixins';
+@import 'variables';
+
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    font-size: 10px;
+}
+
+body {
+    min-height: 100%;
+    font-family: 1.5rem/1 'Istok Web', sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1140px;
+    width: 96%;
+}
+
+section {
+    height: 100vh;
+    background: #c4c4c4;
+    // overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    // margin-top: -1px;
+
+}
+
+.textblock {
+    width: 65%;
+    padding: 40px;
+    
+    &__title {
+        font-size: 4.5rem;
+    }
+    
+    &__text {
+        font-size: 2rem;
+    }
+    
+    &__text-nob {
+        font-family: 'Caveat', cursive;
+        font-size: 2rem;
+
+    }
+    
+    &__item {
+        font-size: 2rem;
+
+    }
+
+    &__item::before {
+        content: '';
+        padding: 0.1px 11px;
+        min-width: 4px;
+        margin: 2px;
+        height: 4px;
+        border-radius: 50%;
+        background-color: rgb(27, 27, 27);
+    }
+}
+
+.picture {
+    width: 35%;
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+    &__text {
+        padding: 2px;
+        background-color: rgb(179, 179, 179);
+        font-size: 1.8rem;
+        opacity: .9;   
+        text-align: center;     
+    }
+}
+
+.head {
+    background-image: url(../img/last.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    &__bg {
+        width: 35%;
+        height: 55%;
+        background-color: #c5c5c5;
+        opacity: .75;
+        position: absolute;
+        top: 45%;
+        left: 22%;
+        transform: translate(-50%, -50%);
+        text-align: left;
+        padding: 44px 25px
+    }
+
+}
+
+.bg {
+    &__title {
+        @include text($color: #000, $family: $title, $size: 6rem, $weight: 400, $line: 1);
+    }
+
+    &__data {
+        font-size: 2rem;
+        margin: 5px 0;
+    }
+    
+    &__data::before {
+        content: '(';
+    }
+    
+    &__data::after {
+        content: ')';
+    }
+
+    &__subtitle {
+        font-size: 4rem;
+        margin-top: 20px;
+    }
+}
+
+.nav {
+    background-color: #cbcbcb;
+    opacity: .97;
+    width: 100%;
+    min-height: 90px;
+    margin-top: -6.7%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    z-index: 100000;
+
+
+    &__title {
+        font-size: 4rem;
+        margin: 0 0 0 8px;
+    }
+
+    &__title:hover {
+        transform: scale(1.18);
+    }
+
+    &__list {
+        list-style: none;
+        display: flex;
+        margin-left: -30px;
+    }
+
+}
+
+.title-nav {
+    &__link {
+        text-decoration: none;
+        color: #000;
+    }
+}
+
+ul:hover > li {
+    opacity: .3;
+}   
+
+.list {
+    &__item {
+        padding: 0 5px 0 12px;
+        font-size: 2.2rem;
+    }
+
+    &__item::before {
+        content: '|';
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+    
+    &__item::after {
+        content: '|';
+        font-size: 2.5rem;
+        font-weight: bold;
+    } 
+
+    &__item:hover {
+        transform: scale(1.3);
+        opacity: 1;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: #000;
+    }
+}
+
+.childhood {
+}
+
+.tubingel {
+}
+
+.india-img {
+}
+
+.casa--camuzzi {
+    &__bgi {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.montaniala-picture {
+    &__portret {
+        margin-top: 25px;
+    }
+}
+
+.speil-1 {
+    &__textblock {
+        padding-top: 11%;
+    }
+}
+
+.speil1-picture {
+    &__portret {
+        margin: 18% 0 0;
+    }
+}
+
+.creation {
+    background-image: url(../img/creation1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+    &__bg {
+        width: 50%;
+        height: 100%;
+        background-color: #c5c5c5;
+        opacity: .9;
+        position: relative;
+        // left: 50%;
+        text-align: left;
+        padding: 44px 25px
+    }
+}
+
+.creation-1 {
+    background-image: url(../img/creation.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+    &__bg {
+        width: 50%;
+        height: 100%;
+        background-color: #c5c5c5;
+        opacity: .9;
+        position: relative;
+        left: 50%;
+        text-align: left;
+        padding: 44px 25px
+    }
+}
+
+.creation-2 {
+    background-image: url(../img/write.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+    &__bg {
+        width: 50%;
+        height: 100%;
+        background-color: #c5c5c5;
+        opacity: .9;
+        position: relative;
+        // left: 50%;
+        text-align: left;
+        padding: 44px 25px
+    }
+
+}
+
+.footer {
+    background-image: url(../img/first.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &__bg {
+        width: 30%;
+        height: 50%;
+        background-color: #c5c5c5;
+        opacity: .9;
+        position: relative;
+        top: 25%;
+        left: 62%;
+        text-align: left;
+        padding: 44px 25px
+    }
+
+}
+
+.footer-bg {
+    padding: 5%;    
+    &__autor {
+        @include text($color: #000, $family: 'Istok Web', $size: 3.5rem, $weight: 400, $line: 1);
+    }
+}
