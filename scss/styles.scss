@@ -153,6 +153,13 @@ section {
 
     &__title:hover {
         transform: scale(1.18);
+        transition: 0.25s ease-in-out;
+    }
+
+    &__title:active {
+        transform: scale(1);
+        opacity: 1;
+        transition: .25s ease-in-out;
     }
 
     &__list {
@@ -195,6 +202,13 @@ ul:hover > li {
     &__item:hover {
         transform: scale(1.3);
         opacity: 1;
+        transition: .25s ease-in-out;
+    }
+    
+    &__item:active {
+        transform: scale(1);
+        opacity: 1;
+        transition: .25s ease-in-out;
     }
 
     &__link {
