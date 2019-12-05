@@ -330,7 +330,7 @@ ul:hover > li {
 }
 
 .footer-bg {
-    padding: 5%;    
+    // padding-bottom: 1%;    
     &__autor {
         @include text($color: #000, $family: 'Istok Web', $size: 3.5rem, $weight: 400, $line: 1);
     }
